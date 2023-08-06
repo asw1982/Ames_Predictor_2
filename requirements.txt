@@ -1,5 +1,5 @@
 Flask==2.2.2
-
+gunicorn==19.7.1
 numpy==1.25.0
 pandas==1.5.3
 rdkit==2023.3.2
