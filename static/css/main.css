@@ -1,0 +1,19 @@
+body {
+
+font-family: courier;
+
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+    display:table;/* shrinks to fit content */
+    margin:auto;/* nice thing of auto margin if display:flex; it center both horizontal and vertical :) */
+}
+
+input[type="text"] {
+    width: 500px;
+}

@@ -1,0 +1,39 @@
+ 
+ {% extends 'base.html' %}
+  
+ 
+ 
+ {% block head %}
+ 
+ {% endblock %}
+ 
+ 
+ 
+ {% block body %}
+ 
+
+ <div class="content">
+     
+     <h1 style="text-align: center">Ames Mutagenicity Predictor</h1>
+     <center><img src="{{user_image}}", heigth= 200, width=600></center> 
+   
+    
+    <h1 style="text-align: center">Please enter the smiles code here </h1>
+    <center> (threshold value = 0.5) </center>
+    <form  action="/" method="POST">
+        <input class="center" type="text" name="content" id="content">
+        <input class="center" type="submit" value=" Predict">
+        <center><h2> Ames Mutagenicity Prediction Result</h2></center>
+        
+   
+       
+    
+        
+    </form>
+    
+       
+        
+ </div>
+ 
+ <center><b>{{smiles_input}} : {{pred_result}}</b></center>
+ {% endblock %}
